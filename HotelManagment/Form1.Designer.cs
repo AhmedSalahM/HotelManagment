@@ -28,12 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            button1 = new Button();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            SuspendLayout();
+            // 
+            // button1
+            // 
+            button1.Location = new Point(326, 182);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 0;
+            button1.Text = "Login";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(304, 71);
+            textBox1.Name = "textBox1";
+            textBox1.PlaceholderText = "Enter UserName";
+            textBox1.Size = new Size(158, 27);
+            textBox1.TabIndex = 1;
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(304, 130);
+            textBox2.Name = "textBox2";
+            textBox2.PlaceholderText = "Enter Password";
+            textBox2.Size = new Size(158, 27);
+            textBox2.TabIndex = 2;
+            textBox2.Tag = "";
+            textBox2.UseSystemPasswordChar = true;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(button1);
+            Name = "Form1";
             Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button button1;
+        private TextBox textBox1;
+        private TextBox textBox2;
     }
 }

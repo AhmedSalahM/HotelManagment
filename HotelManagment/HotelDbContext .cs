@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using HotelManagment.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -16,7 +17,7 @@ namespace HotelManagment
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             options.UseSqlServer(
-                "Server=DESKTOP-5G9P0QP\\SQLEXPRESS;Database=HotelSystemDB;Trusted_Connection=True;");
+                "Server=DESKTOP-5G9P0QP\\SQLEXPRESS;Database=HotelSystemDB;Trusted_Connection=True;TrustServerCertificate=True;");
         }
     }
 }

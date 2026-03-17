@@ -3,8 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace HotelManagment
+namespace HotelManagment.Entities
 {
+    public enum Gender
+    {
+        Male,
+        Female
+    }
     internal class Guest
     {
         [Key]
@@ -16,7 +21,15 @@ namespace HotelManagment
 
         [Phone]
         public string Phone { get; set; }
+        public Gender Gender { get; set; }
+
+        public DateTime DateOfBirth { get; set; }
 
         public List<Reservation> Reservations { get; set; }
+        public override string ToString()
+        {
+
+            return $"{Name}";
+        }
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace HotelManagment
+namespace HotelManagment.Entities
 {
     internal class Room
     {
@@ -19,5 +19,10 @@ namespace HotelManagment
         public bool IsAvailable { get; set; }
 
         public List<Reservation> Reservations { get; set; }
+        public override string ToString()
+        {
+
+            return $"{RoomNumber}";
+        }
     }
 }

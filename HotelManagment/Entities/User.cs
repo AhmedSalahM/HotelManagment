@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace HotelManagment
+namespace HotelManagment.Entities
 {
     public enum UserRole
     {
