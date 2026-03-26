@@ -17,7 +17,7 @@ namespace HotelManagment
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             options.UseSqlServer(
-                "Server=DESKTOP-5G9P0QP\\SQLEXPRESS;Database=HotelSystemDB;Trusted_Connection=True;TrustServerCertificate=True;");
+                "Server=D\\SQLEXPRESS;Database=HotelSystemDB;Trusted_Connection=True;TrustServerCertificate=True;");
         }
     }
 }
